@@ -9,9 +9,13 @@ const PersonasInfo = ({ userInfo }) => {
         <div className="user-title-text">USER PERSONA</div>
         <div className="user-title-name">{userInfo.name}</div>
       </div>
-      <div className="username">{userInfo.username}</div>
+      <div className="username">
+        <span>username: </span>
+        {userInfo.username}
+      </div>
       <div className="email">
         <a href={`mailto:${userInfo.email}`} className="email">
+          <span>email: </span>
           {userInfo.email}
         </a>
       </div>
@@ -36,6 +40,14 @@ const PersonasInfo = ({ userInfo }) => {
           <li>
             <span>phone: </span>
             {userInfo.phone}
+          </li>
+          <li>
+            <span>website: </span>
+            {userInfo.website}
+          </li>
+          <li>
+            <span>company: </span>
+            {userInfo.company.name}
           </li>
         </ul>
       </div>
