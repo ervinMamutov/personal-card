@@ -1,13 +1,12 @@
 import './PersonasCards.css';
 import PropTypes from 'prop-types';
-import PersonasInfo from './PersonasInfo';
-import data from '../data/data';
+import SingleCard from './SingleCard';
 
 const PersonasCards = ({ data }) => {
   return (
     <div className="card-container">
       {data.map((userInfo, index) => (
-        <PersonasInfo key={index} userInfo={userInfo} />
+        <SingleCard key={index} userInfo={userInfo} />
       ))}
     </div>
   );

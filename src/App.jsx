@@ -23,8 +23,6 @@ function App() {
     getData();
   }, []);
 
-  // console.log(userCard);
-
   return (
     <Card>
       <Header />
